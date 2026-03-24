@@ -8,14 +8,18 @@ Think of this API as the brain behind a simple car park ticketing system. Here i
 
 •Check how many spaces are free and how many are taken
 •Let a car in by recording its registration plate and assigning it a space number
+
 •Calculate how much a driver owes when they leave, based on how long they were parked
+
 •Free up the space so another car can use it
 
 Parking charges are calculated per minute, with an extra £1.00 added for every 5 minutes parked:
 
 Vehicle Type	Rate per Minute	Extra per 5 min
 Small Car	£0.10	£1.00
+
 Medium Car	£0.20	£1.00
+
 Big Car	£0.40	£1.00
 
 
@@ -24,42 +28,62 @@ Big Car	£0.40	£1.00
 Make sure you have the following installed before cloning the project:
 
 •Java 21
+
 •Maven 3.8+
+
 •Git
+
 •An IDE (Eclipse or IntelliJ IDEA)
+
 •Postman (for testing the API manually)
 
 - Clone from GitHub
+
 Open a terminal and run:
+
 git clone https://github.com/AndreaPalombi/parkingAPI.git
+
 cd parkingAPI
 
 - Open in Eclipse
+
 1.Open Eclipse and go to File → Import
+
 2.Select Maven → Existing Maven Projects → Next
+
 3.Browse to the cloned folder and click Finish
+
 4.Right-click pom.xml → Maven → Reload Project to download dependencies
 
 - Run the Application
+
 via Eclipse:
+
 •Right-click ParkingApiApplication.java → Run As → Java Application
+
 or
+
 via terminal:
+
 mvn spring-boot:run
 
 The API starts on default port 8080.
 
 - Run the Tests
+
 via Eclipse:
+
 •Right-click the project → Run As → Maven Test
 
 
 
 # API ENDPOINTS
 -  GET /parking: Check Availability
+
 Returns how many spaces are free and how many are taken. No request body needed.
 
 -  POST /parking: Park a Vehicle
+
 Parks a vehicle in the first available space and returns its assigned space number and entry time.
 Valid values for vehicleType: SMALL, MEDIUM, BIG (N.B. The vehicleType MUST be CAPITAL letters).
 
@@ -74,6 +98,7 @@ raw JSON body type:
 Calculates the parking charge, frees up the space and returns the final bill.
 
 raw JSON body type:
+
 {
   "vehicleReg": "AB12 CDE"
 }
