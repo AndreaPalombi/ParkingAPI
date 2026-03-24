@@ -49,17 +49,17 @@ mvn spring-boot:run
 
 The API starts on default port 8080.
 
-Run the Tests
+- Run the Tests
 via Eclipse:
 •Right-click the project → Run As → Maven Test
 
 
 
 # API ENDPOINTS
--  GET /parking (http://localhost:8080/parking): Check Availability
+-  GET /parking: Check Availability
 Returns how many spaces are free and how many are taken. No request body needed.
 
--  POST /parking (http://localhost:8080/parking): Park a Vehicle
+-  POST /parking: Park a Vehicle
 Parks a vehicle in the first available space and returns its assigned space number and entry time.
 Valid values for vehicleType: SMALL, MEDIUM, BIG (N.B. The vehicleType MUST be CAPITAL letters).
 
@@ -70,7 +70,7 @@ raw JSON body type:
   "vehicleType": "SMALL"
 }
 
-- POST /parking/bill (http://localhost:8080/parking/bill): Check Out a Vehicle
+- POST /parking/bill: Check Out a Vehicle
 Calculates the parking charge, frees up the space and returns the final bill.
 
 raw JSON body type:
