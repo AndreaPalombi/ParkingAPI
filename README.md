@@ -18,24 +18,6 @@ Small Car	£0.10	£1.00
 Medium Car	£0.20	£1.00
 Big Car	£0.40	£1.00
 
-#  PROJECT STRUCTURE
-Project Structure
-src/main/java/com/parkingAPI/
-  ├── ParkingApiApplication.java     Entry point
-  ├── controller/
-  │   └── ParkingController.java     REST endpoints
-  ├── service/
-  │   └── ParkingService.java        Business logic
-  ├── model/
-  │   ├── ParkingSpace.java          Domain model
-  │   ├── VehicleType.java           Enum: small, medium, big
-  │   └── Dto.java                   Request/Response records
-  └── exception/
-      ├── GlobalExceptionHandler.java  Centralised error handling
-      ├── ParkingFullException.java
-      ├── VehicleNotFoundException.java
-      └── VehicleAlreadyParkedException.java
-
 
 #  SETTING UP LOCALLY
 - Prerequisites
