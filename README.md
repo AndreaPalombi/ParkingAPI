@@ -34,7 +34,7 @@ Make sure you have the following installed before cloning the project:
 
 •Git
 
-•An IDE (Eclipse or IntelliJ IDEA)
+•An IDE (I suggest Eclipse for this specific project)
 
 •Postman (for testing the API manually)
 
