@@ -16,6 +16,7 @@ Think of this API as the brain behind a simple car park ticketing system. Here i
 Parking charges are calculated per minute, with an extra £1.00 added for every 5 minutes parked:
 
 Vehicle Type	Rate per Minute	Extra per 5 min
+
 Small Car	£0.10	£1.00
 
 Medium Car	£0.20	£1.00
